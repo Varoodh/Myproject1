@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Idea Pitching Portal - Dashboard</title>
+  <link rel="stylesheet" href="./Boot_offl/css/bootstrap.min.css">
+  <script src="./Boot_offl/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    body {
+      background: #00126e;
+    }
+    .content-box {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    .profile-img {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      border: 3px solid #1e3b78;
+    }
+    .stats-box {
+      text-align: center;
+      padding: 20px;
+    }
+    .btn-custom {
+      background-color: #00126e;
+      color: white;
+      border-radius: 8px;
+      padding: 10px 18px;
+      transition: 0.2s;
+    }
+    .btn-custom:hover {
+      background-color: #f5a802;
+      transform: scale(1.03);
+    }
+    @media (max-width: 576px) {
+      .profile-header {
+        text-align: center;
+       
+      }
+    }
+    nav img {
+      height: 50px;
+     }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm ">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-white" ><img src="./Pics/BUsuiness idea logo.png"> Student Portal</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./Mentors.html">Mentors</a></li>
+          <li class="nav-item"><a class="nav-link" href="./aboutus.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="./login.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div class="container">
+
+  <!-- PROFILE HEADER -->
+  <div class="content-box d-flex align-items-center profile-header">
+   <img src="./Pics/S2.jpg" class="profile-img" alt="Profile">
+    <div class="ms-3">
+      <h4>Welcome, Sai Teja!</h4>
+      <p class="mb-1">Student ID: STU1023</p>
+      <p class="text-muted mb-0">BRANCH- School of Computer Studies</p>
+    </div>
+  </div>
+
+  <!-- STATS - RESPONSIVE -->
+  <div class="row">
+    <div class="col-sm-4 col-12">
+      <div class="content-box stats-box">
+        <h6>Total Ideas Submitted</h6>
+        <h2>03</h2>
+      </div>
+    </div>
+
+    <div class="col-sm-4 col-12">
+      <div class="content-box stats-box">
+        <h6>Ideas Approved</h6>
+        <h2>01</h2>
+      </div>
+    </div>
+
+    <div class="col-sm-4 col-12">
+      <div class="content-box stats-box">
+        <h6>Ideas Pending</h6>
+        <h2>02</h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- RECENT IDEAS TABLE -->
+  <div class="content-box">
+    <h4 class="mb-3">Recent Idea Submissions</h4>
+    
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <thead class="table-light">
+          <tr>
+            <th>Idea Title</th>
+            <th>Status</th>
+            <th>Date Submitted</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Smart Water Saver</td>
+            <td><span class="badge bg-success">Approved</span></td>
+            <td>12 Nov 2024</td>
+            <td><button class="btn btn-custom btn-sm">View</button></td>
+          </tr>
+
+          <tr>
+            <td>AI-Quiz Generator</td>
+            <td><span class="badge bg-warning text-dark">Pending</span></td>
+            <td>25 Nov 2024</td>
+            <td><button class="btn btn-custom btn-sm">View</button></td>
+          </tr>
+
+          <tr>
+            <td>Eco-Friendly Campus Plan</td>
+            <td><span class="badge bg-warning text-dark">Pending</span></td>
+            <td>29 Nov 2024</td>
+            <td><button class="btn btn-custom btn-sm">View</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- QUICK ACTIONS -->
+  <div class="content-box text-center">
+    <h4>Quick Actions</h4>
+    <a href="./BII.html"  class="btn btn-custom m-2">Submit New Idea</a>
+    <button class="btn btn-custom m-2">Edit Profile</button>
+  </div>
+</div>
+<footer>
+   <footer class="bg-light text-center py-3">
+    <p class="mb-0">&copy; 2025 Student Pitching Portal. All rights reserved.</p>
+  </footer>
+</body>
+</html>

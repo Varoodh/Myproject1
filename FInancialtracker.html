@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Startup Budget Planner | Student Idea Portal</title>
+
+  <link href="./Boot_offl/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="./Boot_offl/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #00126e, #0033aa);
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+    }
+
+    nav img {
+      height: 45px;
+      margin-right: 8px;
+    }
+
+    .tracker-container {
+      max-width: 900px;
+      margin: auto;
+      padding: 25px;
+    }
+
+    h2 {
+      color: #ffffff;
+      font-weight: 700;
+    }
+
+    .card {
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .category-btn {
+      border-radius: 25px;
+      padding: 6px 16px;
+      margin: 5px;
+    }
+
+    @media (max-width: 768px) {
+      .summary-card {
+        margin-bottom: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-white d-flex align-items-center"><img src="./Pics/BUsuiness idea logo.png">Student Portal</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./Mentors.html">Mentors</a></li>
+          <li class="nav-item"><a class="nav-link" href="./aboutus.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="./login.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN -->
+  <div class="tracker-container">
+
+    <h2 class="text-center mb-4">Startup Budget Planner</h2>
+
+    <!-- INPUT CARD -->
+    <div class="card p-4 mb-4">
+      <h4 class="fw-bold">Add Budget Entry</h4>
+      <hr>
+
+      <form>
+        <div class="row">
+
+          <div class="col-md-6 mb-3">
+            <label class="fw-bold">Item / Expense Title</label>
+            <input type="text" class="form-control" placeholder="e.g. Prototype materials, Branding, Hire staff">
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <label class="fw-bold">Cost (₹)</label>
+            <input type="number" class="form-control" placeholder="0.00">
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <label class="fw-bold">Type</label>
+            <select class="form-control">
+              <option>Startup Cost</option>
+              <option>Expected Revenue</option>
+            </select>
+          </div>
+        </div>
+
+        <label class="fw-bold">Category</label>
+        <div class="d-flex flex-wrap mb-3">
+
+          <button type="button" class="btn btn-outline-dark category-btn">Prototype Development</button>
+          <button type="button" class="btn btn-outline-dark category-btn">Raw Materials</button>
+          <button type="button" class="btn btn-outline-dark category-btn">Branding & Logo Design</button>
+          <button type="button" class="btn btn-outline-dark category-btn">Marketing / Promotion</button>
+          <button type="button" class="btn btn-outline-dark category-btn">Website / App Cost</button>
+          <button type="button" class="btn btn-outline-dark category-btn">Pitch Preparation</button>
+          <button type="button" class="btn btn-outline-dark category-btn">Team Hiring</button>
+          <button type="button" class="btn btn-outline-dark category-btn">Expected Sales</button>
+          <button type="button" class="btn btn-outline-dark category-btn">Event / Competition Fees</button>
+
+        </div>
+
+        <button class="btn btn-success px-4">Add</button>
+      </form>
+    </div>
+
+    
+    <div class="card p-4 mb-5">
+      <h4 class="fw-bold">Startup Budget Overview</h4>
+      <hr>
+
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped">
+
+          <thead class="table-dark">
+            <tr>
+              <th>Item</th>
+              <th>Cost</th>
+              <th>Type</th>
+              <th>Category</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Prototype Material</td>
+              <td>₹ 1,200</td>
+              <td>Startup Cost</td>
+              <td>Raw Materials</td>
+            </tr>
+
+            <tr>
+              <td>Logo / Branding</td>
+              <td>₹ 600</td>
+              <td>Startup Cost</td>
+              <td>Branding & Logo Design</td>
+            </tr>
+
+            <tr>
+              <td>Expected Sales (Month 1)</td>
+              <td>₹ 4,500</td>
+              <td>Expected Revenue</td>
+              <td>Expected Sales</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
